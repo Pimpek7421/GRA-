@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podaj Hasło</title>
+    <!-- Link do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 75vh; 
+            background-color: #121212; 
+            font-family: 'Roboto Slab', serif; 
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 4rem; 
+        }
+        input[type="password"] {
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin: 1rem 0;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            const correctPassword = "312"; // Ustaw właściwe hasło tutaj
+            if (password === correctPassword) {
+                window.location.href = "file:///C:/Users/Lenovo/Desktop/graffiti/strona/Witaj!.html"; // Adres następnej strony
+            } else {
+                alert("Niepoprawne hasło!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>PODAJ HASŁO</h1>
+    <input type="password" id="password" placeholder="Wpisz hasło">
+    <button onclick="checkPassword()">Zatwierdź</button>
+    <p>Jaka kolejność?</p>
+</body>
+</html>

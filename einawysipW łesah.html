@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>einawysipW łesah</title>
+    <style>
+        body {
+            background-color: #ffffff; /* Ciemne tło */
+            color: #ffffff; /* Kolor tekstu */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            background-color: green; /* Ciemniejszy prostokąt z tłem */
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: green;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        input[type="password"]:focus {
+            border-color: white;
+            outline: none;
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ŹDAWORPW ENOIZELANZ AŁSAH</h1>
+        <div class="line"></div>
+        <form id="password-form">
+            <input type="password" id="password" placeholder="szipW ołsah" required>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('password').addEventListener('input', function() {
+            const password = document.getElementById('password').value;
+
+            // Lista haseł i odpowiadających im stron
+            const passwordLinks = {
+                "lustro": "file:///C:/Users/Lenovo/Desktop/graffiti/strona/Przej%C5%9Bcie%20do%20wymiaru%20lustra.html",
+                "ośmiornica": "file:///C:/Users/Lenovo/Desktop/graffiti/strona/Rze%C5%9Bnik.html",
+                "atrament": "file:///C:/Users/Lenovo/Desktop/graffiti/strona/atrament.html",
+                "27.07.1987": "file:///C:/Users/Lenovo/Desktop/graffiti/strona/YOU%20GOT%20RICKROLLED!!!.html",
+                "2017": "file:///C:/Users/Lenovo/Desktop/graffiti/strona/2017.html",
+                "ceramika": "file:///C:/Users/Lenovo/Desktop/graffiti/strona/Nie%20umawaj%20si%C4%99%20z%20diab%C5%82em.html",
+                "muszka": "file:///C:/Users/Lenovo/Desktop/graffiti/strona/muszka.html",
+                "devniwers": "file:///C:/Users/Lenovo/Desktop/graffiti/strona/devniwers.html"
+            };
+
+            // Sprawdzenie, czy wprowadzony tekst pasuje do jednego z haseł
+            if (passwordLinks[password]) {
+                window.location.href = passwordLinks[password]; // Przekierowanie na odpowiednią stronę
+            }
+        });
+    </script>
+</body>
+</html>

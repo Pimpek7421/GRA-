@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET RICKROLLED!!11!</title>
+    <style>
+        /* Reset stylów */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Tło animowane */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, navy, orange, yellow, green, blue, purple, red, purple);
+            background-size: 1000% 1000%;
+            animation: backgroundAnimation 1s infinite;
+        }
+
+        /* Animacja tła */
+        @keyframes backgroundAnimation {
+            0% { background-position: 50% 100%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 50% 100%; }
+        }
+
+        /* Tekst */
+        h1 {
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            font-size: 4rem;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+            animation: textColorAnimation 1s infinite;
+            font-style: italic;
+        }
+
+        /* Animacja koloru tekstu */
+        @keyframes textColorAnimation {
+            0% { color: navy; }
+            25% { color: orange; }
+            50% { color: yellow; }
+            75% { color: green; }
+            100% { color: blue; }
+            125% { color: red; }
+            150% { color: purple; }
+        }
+
+        /* GIF */
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 5px solid white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>YOU GOT RICKROLLED!!11!</h1>
+    <img src="https://media.giphy.com/media/a6OnFHzHgCU1O/giphy.gif" alt="Rickroll GIF">
+</body>
+</html>
